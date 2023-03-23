@@ -9,13 +9,78 @@
 </head>
 
 <body>
-  <div id="app">
-    <nav>
-      <p>SQL Learning</p>
-    </nav>
+  <nav>
+    <p>SQL Learning</p>
+  </nav>
 
+  <main class="app">
     <h1>SQL Exercises</h1>
-  </div>
+
+    <h2>SQLite3</h2>
+
+    <ul class="challenge-list" role="list">
+      <li>
+        <details>
+          <summary>
+            Create a database named "test.db" with the SQLite3 cli.
+          </summary>
+          Run the command "sqlite3 &lt;database name&gt;.db" in the terminal.
+        </details>
+      </li>
+      <li>
+        <details>
+          <summary>
+            Open test.db with the cli
+          </summary>
+          <ol>
+            <li>Start the cli by running "sqlite3" in the terminal.</li>
+            <li>Open the database with ".open FILENAME"</li>
+          </ol>
+        </details>
+      </li>
+      <li>
+        <details>
+          <summary>
+            Create a table called "users" with columns "id (primary key) and name (text) yearbook_quote (text)".
+          </summary>
+          Run the command "CREATE TABLE users(id INTEGER PRIMARY KEY, name TEXT);"
+        </details>
+      </li>
+      <li>
+        <details>
+          <summary>
+            Insert at least 3 new users.
+          </summary>
+          Run the command "INSERT INTO users(name, yearbook_quote) VALUES('&lt;name&gt;', '&lt;yearbook_quote&gt;');"
+        </details>
+      </li>
+      <li>
+        <details>
+          <summary>
+            Select all users.
+          </summary>
+          SELECT * FROM users;
+        </details>
+      </li>
+      <li>
+        <details>
+          <summary>
+            Select all users names only.
+          </summary>
+          SELECT names and yearbook_quotes FROM users;
+        </details>
+      </li>
+      <li>
+        <details>
+          <summary>
+            Change the name of a user.
+          </summary>
+          UPDATE users SET name='&lt;name&gt;' WHERE id=&lt;id&gt;;
+        </details>
+      </li>
+
+    </ul>
+  </main>
   <script type="module" src="/src/main.ts"></script>
 </body>
 
